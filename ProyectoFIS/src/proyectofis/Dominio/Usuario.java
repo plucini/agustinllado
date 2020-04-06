@@ -66,4 +66,10 @@ public class Usuario {
         this.saldo = saldo;
     }
     
+    @Override
+    public boolean equals(Object obj) {
+        Usuario u = (Usuario) obj;
+        return u.getCedula().equals(this.getCedula());
+    }
+    
 }
