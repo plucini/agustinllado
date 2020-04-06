@@ -54,5 +54,17 @@ E.           Se restará de ese pago la cantidad
 
         return impuesto;
     }
+    
+        /*Cobro de sueldo
+    Cobro de sueldo: a un usuario se le agrega a su saldo la 
+    cantidad señalada por sus servicios laborales.
+
+Al finalizar con la creación de los dos commits indicados, 
+    se deberá hacer un merge de esta rama a la rama develop.
+     */
+    public void cobroDeSueldo(Usuario u, int cantidad) {
+        int saldoActual = u.getSaldo();
+        u.setCantidadDeHijos(saldoActual + cantidad);
+    }
 
 }
